@@ -12,6 +12,5 @@
         linear-gradient(180deg,#E7E7E7 0.01%,#1A1A1A 100%);
     --section-border: 2px solid var(--accent-color);
     --difference-color: #FFF;
-    --contour-color: #000;
     --fill-color: #FF0000;
 }

@@ -15,7 +15,6 @@
         repeating-linear-gradient(90deg, #000 0, #000 2px, #F000 2px, #F000 4px),
         linear-gradient(180deg,#007F0C 0%,#004306 100%);
     --difference-color: var(--accent-color);
-    --contour-color: #00CC14;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,6 +28,5 @@
             repeating-linear-gradient(90deg, #000 0, #000 2px, #F000 2px, #F000 4px),
             linear-gradient(180deg,#007F0C 0%,#004306 100%);
         --difference-color: var(--accent-color);
-        --contour-color: #00CC14;
     }
 }

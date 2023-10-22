@@ -17,7 +17,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter-Variable', sans-serif;
   font-variation-settings: 'wght' var(--card-text);
   background-color: var(--background-color);
   color: var(--accent-color);
@@ -47,12 +47,13 @@
   border: var(--section-border);
 }
 
-.header__title {
+.header__logo {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   padding-block-start: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
+  text-decoration: none;
 }
 
-.header__title-description {
+.header__title {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 }
 
@@ -128,6 +129,10 @@
 .card-title {
   font-weight: var(--card-title);
   padding: 5px 10px;
+}
+
+.card-text {
+  line-height: 21px;
 }
 
 .card-text:first-of-type {
@@ -233,68 +238,6 @@
   outline-color: var(--accent-color);
 }
 
-.core {
-  fill: rgb(0 0 0 / 0);
-  transition: fill 0.3s linear 0.03s;
-}
-
-.card__icon-button:hover .like-icon .core {
-  fill: var(--contour-color);
-  transition: fill 0.3s linear;
-}
-
-.main-body {
-  fill: rgb(0 0 0 / 0);
-  transition: fill 0.3s linear;
-}
-
-.card__icon-button:hover .like-icon .main-body {
-  fill: var(--contour-color);
-  transition: fill 0.3s linear 0.05s;
-}
-
-.card__icon-button:active .like-icon .core {
-  fill: var(--fill-color);
-  transition: fill 0.3s linear;
-}
-
-.card__icon-button:active .like-icon .main-body {
-  fill: var(--fill-color);
-  transition: fill 0.3s linear 0.05s;
-}
-
-.like-icon.is-liked .core {
-  fill: var(--fill-color);
-  transition: fill 0.3s linear;
-}
-
-.like-icon.is-liked .main-body {
-  fill: var(--fill-color);
-  transition: fill 0.3s linear 0.05s;
-}
-
-.like-icon.is-liked .contour {
-  fill: var(--fill-color);
-  transition: fill 0.3s linear 0.06s;
-}
-
-.like-icon.is-liked .heart {
-  animation: heart-size 0.3s ease-in 0.1s alternate;
-  transform-origin: center;
-}
-
-.like-icon.is-liked .sparks {
-  animation: sparks 0.3s ease-in 0.3s alternate;
-}
-
-.card__icon-button:hover .like-icon.is-liked .core, .card__icon-button:hover .like-icon.is-liked .main-body {
-  fill: var(--fill-color);
-}
-
-.sparks {
-  opacity: 0;
-}
-
 .card__like-button {
   width: 130px;
   height: 38px;
@@ -370,6 +313,7 @@
 dialog#dialog-id {
   background-color: var(--background-color);
   color: var(--accent-color);
+  font-family: var(--accent-font);
   font-size: 14px;
   text-transform: uppercase;
   inline-size: clamp(21.3125rem, 20.9604rem + 1.5023vw, 22.3125rem);
