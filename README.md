@@ -1,3 +1,3 @@
 # zakrivayuschiy-teg-f
 Проект "Закрывающий тег":
-https://github.com/Natalia-Kimel/zakrivayuschiy-teg-f/tree/main
+https://natalia-kimel.github.io/zakrivayuschiy-teg-f/
